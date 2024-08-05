@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 20px;
+}
+
+.left-side, .right-side {
+    flex: 1;
+    margin: 10px;
+}
+
+.left-side {
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+button, select, input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, select:hover, input:hover {
+    background-color: #505050;
+}
+
+button:disabled {
+    background-color: #2a2a2a;
+    cursor: not-allowed;
+}
+
+input#fileTitle {
+    width: calc(100% - 20px);
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+    background-color: #2a2a2a;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #3a3a3a;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333333;
+}
+
+.marker {
+    padding: 10px;
+    border: 1px solid #3a3a3a;
+}
+
+audio {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.good {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.bad {
+    background-color: #f44336;
+    color: #ffffff;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+#dataTable {
+    margin-top: 20px;
+    display: table;
+}
+
+#fileTitle.good {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+#fileTitle.bad {
+    background-color: #f44336;
+    color: #ffffff;
+}
